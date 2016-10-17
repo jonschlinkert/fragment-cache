@@ -21,10 +21,15 @@ var MapCache = require('map-cache');
  * @api public
  */
 
-class FragmentCache {
-  constructor(caches) {
-    this.caches = caches || {};
-  }
+function FragmentCache(caches) {
+  this.caches = caches || {};
+}
+
+/**
+ * Prototype
+ */
+
+FragmentCache.prototype = {
 
   /**
    * Get cache `name` from the `fragment.caches` object. Creates a new
@@ -41,9 +46,9 @@ class FragmentCache {
    * @api public
    */
 
-  cache(cacheName) {
+  cache: function(cacheName) {
     return this.caches[cacheName] || (this.caches[cacheName] = new MapCache());
-  }
+  },
 
   /**
    * Set a value for property `key` on cache `name`
@@ -59,11 +64,11 @@ class FragmentCache {
    * @api public
    */
 
-  set(cacheName, key, val) {
+  set: function(cacheName, key, val) {
     var cache = this.cache(cacheName);
     cache.set(key, val);
     return cache;
-  }
+  },
 
   /**
    * Returns true if a non-undefined value is set for `key` on fragment cache `name`.
@@ -85,9 +90,9 @@ class FragmentCache {
    * @api public
    */
 
-  has(cacheName, key) {
+  has: function(cacheName, key) {
     return typeof this.get(cacheName, key) !== 'undefined';
-  }
+  },
 
   /**
    * Get `name`, or if specified, the value of `key`. Invokes the [cache]() method,
@@ -107,14 +112,14 @@ class FragmentCache {
    * @api public
    */
 
-  get(name, key) {
+  get: function(name, key) {
     var cache = this.cache(name);
     if (typeof key === 'string') {
       return cache.get(key);
     }
     return cache;
   }
-}
+};
 
 /**
  * Expose `FragmentCache`
