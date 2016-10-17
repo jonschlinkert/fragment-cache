@@ -1,7 +1,7 @@
 {
   "name": "fragment-cache",
   "description": "A cache for managing namespaced sub-caches",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "homepage": "https://github.com/jonschlinkert/fragment-cache",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/fragment-cache",
@@ -20,15 +20,15 @@
     "test": "mocha"
   },
   "dependencies": {
-    "map-cache": "^0.2.1"
+    "map-cache": "^0.2.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-eslint": "^2.0.0",
-    "gulp-format-md": "^0.1.9",
-    "gulp-istanbul": "^0.10.4",
-    "gulp-mocha": "^2.2.0",
-    "mocha": "^2.4.5"
+    "gulp-eslint": "^3.0.1",
+    "gulp-format-md": "^0.1.11",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^3.0.1",
+    "mocha": "^3.1.2"
   },
   "keywords": [
     "cache",
@@ -39,8 +39,8 @@
       "gulp-format-md"
     ],
     "reflinks": [
-      "verb",
-      "map-cache"
+      "map-cache",
+      "verb"
     ],
     "related": {
       "list": [
