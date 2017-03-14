@@ -1,7 +1,7 @@
 {
   "name": "fragment-cache",
   "description": "A cache for managing namespaced sub-caches",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/jonschlinkert/fragment-cache",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "jonschlinkert/fragment-cache",
