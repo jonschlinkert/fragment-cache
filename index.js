@@ -1,8 +1,8 @@
 /*!
- * fragment-cache (https://github.com/jonschlinkert/fragment-cache)
+ * fragment-cache <https://github.com/jonschlinkert/fragment-cache>
  *
- * Copyright (c) 2016, Jon Schlinkert.
- * Licensed under the MIT License.
+ * Copyright (c) 2016-2017, Jon Schlinkert.
+ * Released under the MIT License.
  */
 
 'use strict';
