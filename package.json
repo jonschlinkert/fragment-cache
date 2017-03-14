@@ -14,7 +14,7 @@
   ],
   "main": "index.js",
   "engines": {
-    "node": ">=4.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "mocha"
@@ -28,7 +28,7 @@
     "gulp-format-md": "^0.1.11",
     "gulp-istanbul": "^1.1.1",
     "gulp-mocha": "^3.0.1",
-    "mocha": "^3.1.2"
+    "mocha": "^3.2.0"
   },
   "keywords": [
     "cache",
