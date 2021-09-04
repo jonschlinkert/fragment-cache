@@ -59,13 +59,13 @@ describe('methods', function() {
   });
 
   describe('.set', function() {
-    it('should set items on the __data__ object of a cache', function() {
+    it('should set items on the CacheMap object of a cache', function() {
       var fragment = new FragmentCache();
       var cache = fragment.cache('foo');
       fragment.set('foo', 'a', 'b');
 
-      assert(cache.__data__.hasOwnProperty('a'));
-      assert.equal(cache.__data__.a, 'b');
+      assert(cache.has('a'));
+      assert.equal(cache.get('a'), 'b');
     });
   });
 
@@ -79,13 +79,13 @@ describe('methods', function() {
   });
 
   describe('.cache.set', function() {
-    it('should set items on cache.__data__', function() {
+    it('should set items on CacheMap', function() {
       var fragment = new FragmentCache();
       var cache = fragment.cache('foo');
       cache.set('a', 'b');
 
-      assert(cache.__data__.hasOwnProperty('a'));
-      assert.equal(cache.__data__.a, 'b');
+      assert(cache.has('a'));
+      assert.equal(cache.get('a'), 'b');
     });
   });
 
